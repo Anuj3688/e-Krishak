@@ -89,7 +89,7 @@ box-shadow:  20px 20px 60px #d5d3ad,
     height: 400px;
     padding: 20px;
     /* border: 1px solid black; */
-    top: 100px;
+    top: 140px;
     left: 440px;
 }
 
@@ -102,6 +102,10 @@ box-shadow:  20px 20px 60px #d5d3ad,
     color: #CA6702;
     background-color: transparent;
     border: none;
+    transition: 1s all;
+}
+.signup:hover{
+    transform: scale(1.2);
 }
 label{
     display: inline-block;
@@ -110,7 +114,11 @@ label{
 }
 input{
     width: 180px;
+    border: none;
+    height: 30px;
+    border-radius: 30px;
 }
+
 
 #cross{
     color: gray;
@@ -125,9 +133,15 @@ input{
 }
 
 #loginkey{
-    height: 30px;
+    height: 40px;
     border: none;
     background-color: #8BDB81;
     color: white;
     border-radius: 20px;
+    margin: 5px 0px 20px 80px;
+    font-size: 25px;
+}
+
+#loginkey:hover{
+    background-color: #9af08f;
 }
