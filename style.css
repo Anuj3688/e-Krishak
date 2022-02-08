@@ -22,6 +22,7 @@
     color: white;
 }
 .navbar{
+    background-color: #FBF8CC;
     display: flex;
     /* flex-direction: row; */
     align-items: center;
@@ -36,13 +37,38 @@
     width: 100px;
 }
 
+
 #navele1{
     color: black;
     width: 120px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
 }
+/* CSS for Grid box of Crops */
+#cropdetails , #plantdetails{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 10px 10px 30px ;
+    grid-gap:20px;
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
+}
+
+.crop-items , .plant-items{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    /* border: 1px solid white; */
+    padding: 5px;
+}
+
+.crop-items:hover , .plant-items:hover{
+    background-color: white;
+    color: black;
+}
 /* 
 #navele6{
     height: 30px;
@@ -55,10 +81,14 @@
 input{
     height: 20px;
 } */
-
+#checkvisi{
+    width: 20px;
+    height: 20px;
+}
 #login{
     height: 30px;
     width: 150px;
+    background-color: #8BDB81;
     border: none;
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -82,14 +112,14 @@ input{
     display: none;
     border-radius: 40px;
 background: #FBF8CC;
-box-shadow:  20px 20px 60px #d5d3ad,
-             -20px -20px 60px #ffffeb;
+/* box-shadow:  20px 20px 60px #d5d3ad,
+             -20px -20px 60px #ffffeb; */
     position: fixed;
     width: 360px;
     height: 400px;
     padding: 20px;
     /* border: 1px solid black; */
-    top: 140px;
+    top: 100px;
     left: 440px;
 }
 
@@ -116,9 +146,9 @@ input{
     width: 180px;
     border: none;
     height: 30px;
+    padding-left: 9px;
     border-radius: 30px;
 }
-
 
 #cross{
     color: gray;
@@ -144,4 +174,36 @@ input{
 
 #loginkey:hover{
     background-color: #9af08f;
+}
+
+
+/* image board */
+#imageboard{
+    width: 100%;
+    height: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color: white;
+    background-image: url(./image/img1.jpg);
+    animation-name: changing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-size: 100% 500px;
+    padding: 40px;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes changing {
+    50%{
+        background-image: url(./image/img2.jpg);
+    }
+
+    75%{
+        background-image: url(./image/img3.jpg);
+    }
+    100%{
+        background-image: url(./image/img1.jpg);
+    }
+    
 }

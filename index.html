@@ -12,20 +12,20 @@
     <div class="safetybar">
         Welcome to e-Krishark!
     </div>
-    <div class="navbar bg1 c1">
+    <div class="navbar  c1" id="navhead">
         <div class="navbarelement " id="navele1">
             e-krishak
         </div>
-        <div class="navbarelement" id="navele2">
+        <div class="navbarelement" id="navele2" onmouseover="removeplant() , removecrop()">
             About Us
         </div>
-        <div class="navbarelement" id="navele3">
+        <div class="navbarelement" id="navele3" onmouseover="displayplant()" >
             Plant
         </div>
-        <div class="navbarelement" id="navele4">
+        <div class="navbarelement" id="navele4" onmouseover="displaycrop()" >
             Crop
         </div>
-        <div class="navbarelement" id="navele5">
+        <div class="navbarelement" id="navele5" onmouseover="removeplant() , removecrop()">
             Weather
         </div>
         <div class="navbarelement" id="navele6">
@@ -37,8 +37,36 @@
             </div> -->
         </div>
         <div class="navelement" id="navele7">
-            <button id="login" class="bg2" onclick="displayshow()">Login</button>
+            <button onclick="displayshow()" id="login">login</button>
         </div>
+    </div>
+    <div id="cropdetails" onmouseleave="removecrop()">
+        <div class="crop-items" id="item1">Rice</div>
+        <div class="crop-items" id="item2">Wheat</div>
+        <div class="crop-items" id="item3">Maize</div>
+        <div class="crop-items" id="item4">Millets</div>
+        <div class="crop-items" id="item5">Pulses</div>
+        <div class="crop-items" id="item6">Oilseeds</div>
+        <div class="crop-items" id="item7">Cotton</div>
+        <div class="crop-items" id="item8">Jute</div>
+        <div class="crop-items" id="item9">Tobacco</div>
+        <div class="crop-items" id="item10">Sugarcane</div>
+        <div class="crop-items" id="item11">Rubber</div>
+        <div class="crop-items" id="item12">Coconut</div>
+    </div>
+    <div id="plantdetails" onmouseleave="removeplant()">
+        <div class="plant-items" id="item1"> Apple</div>
+        <div class="plant-items" id="item2">Mango</div>
+        <div class="plant-items" id="item3">Cherry</div>
+        <div class="plant-items" id="item4">Banana</div>
+        <div class="plant-items" id="item5">Guava</div>
+        <div class="plant-items" id="item6">Grape</div>
+        <div class="plant-items" id="item7">Orange</div>
+        <div class="plant-items" id="item8">Walnut</div>
+        <div class="plant-items" id="item9">Lychee</div>
+        <div class="plant-items" id="item10">Papaya</div>
+        <div class="plant-items" id="item11">Plum</div>
+        <div class="plant-items" id="item12">Sugar-apple (sharifa)</div>
     </div>
     <!-- Login box -->
     <div class="loginbox c1 bg1" id="loginbakwas">
@@ -50,17 +78,20 @@
         </div>
         <br>
         <br>
-        <form action="" method="get" onsubmit="validate()">
+        <form >
             <div class="log1">
                 <label for="">Mobile No</label>
-            <input type="number" name="" id=""  >
+            <input type="number" name="" id=""  placeholder="e.g.9987123091">
             </div>
             <br>
             <div class="log2">
                 <label for="">Password</label>
-                <input type="password" name="" id="">
+                <input type="password" name="" id="pass" placeholder="Password"><br>
+                <input type="checkbox" name="" id="checkvisi" onclick="passvisible()">
+                <label for="" style="width: 200px;">Click to see password</label>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="log3">
                 <input type="submit" value="Log-in" id="loginkey">
             </div>
@@ -71,6 +102,12 @@
             <button class="signup">Sign-Up</button>
         </div>
     </div>
+
+    <div id="imageboard"> 
+        Our contribution for Those who work in acres not in hours..
+    </div>
+
+    
     <script src="./script.js"></script>
 </body>
 </html>
