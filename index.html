@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
@@ -8,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Krishak</title>
 </head>
+
 <body class="bg1">
     <div class="safetybar">
         Welcome to e-Krishark!
@@ -19,10 +21,10 @@
         <div class="navbarelement" id="navele2" onmouseover="removeplant() , removecrop()">
             About Us
         </div>
-        <div class="navbarelement" id="navele3" onmouseover="displayplant()" >
+        <div class="navbarelement" id="navele3" onmouseover="displayplant()">
             Plant
         </div>
-        <div class="navbarelement" id="navele4" onmouseover="displaycrop()" >
+        <div class="navbarelement" id="navele4" onmouseover="displaycrop()">
             Crop
         </div>
         <div class="navbarelement" id="navele5" onmouseover="removeplant() , removecrop()">
@@ -78,10 +80,10 @@
         </div>
         <br>
         <br>
-        <form >
+        <form>
             <div class="log1">
                 <label for="">Mobile No</label>
-            <input type="number" name="" id=""  placeholder="e.g.9987123091">
+                <input type="number" name="" id="" placeholder="e.g.9987123091">
             </div>
             <br>
             <div class="log2">
@@ -103,11 +105,32 @@
         </div>
     </div>
 
-    <div id="imageboard"> 
+    <div id="imageboard">
         Our contribution for Those who work in acres not in hours..
     </div>
 
-    
+    <div id="weatherdetails">
+        <h1>Weather</h1>
+        <div id="currentforecast">
+            <div class="c-fore" id="c-fore-item1">Temperature</div>
+            <div class="c-fore" id="c-fore-item2">Wind Speed</div>
+            <div class="c-fore" id="c-fore-item3">Wind Direction</div>
+        </div>
+        <div id="futurepodcast" >
+            <div class="futurepod" id="futurepodcast1">Sunny <br> 28</div>
+            <div id="futurepodcast2" class="futurepod">Sunny <br> 34</div>
+            <div id="futurepodcast3" class="futurepod">Cloudy <br> 28</div>
+            <div id="futurepodcast4" class="futurepod"> Rainy <br> 24 </div>
+            <div id="futurepodcast5" class="futurepod">Sunny <br> 18</div>
+            <div id="futurepodcast6" class="futurepod"> Sunny <br> 30</div>
+            <div id="futurepodcast7" class="futurepod">Cloudy <br> 18</div>
+            <div id="futurepodcast8" class="futurepod">Sunny <br> 18</div>
+            <div id="futurepodcast9" class="futurepod"> Rain <br> 14</div>
+            <div id="futurepodcast10" class="futurepod"> Rain <br> 12</div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>

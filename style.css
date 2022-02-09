@@ -207,3 +207,58 @@ input{
     }
     
 }
+
+/* weather details */
+
+#weatherdetails{
+    width: 1150px;
+    margin: 10px auto;
+    height: 380px;
+    background-size: 1200px 400px;
+    background-repeat: no-repeat;
+    background-image: url(./image/cloudy.jpg);
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+#currentforecast{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+h1{
+    margin-left: 20px;
+}
+.c-fore{
+    border-radius: 20px;
+    width: 350px;
+    height: 180px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 900;
+    
+    background-color: rgb(255, 255, 255,0.8);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+#futurepodcast{
+    margin: 20px;
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 10px;
+}
+.futurepod{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(255, 255, 255,0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 140px;
+    border: 1px solid lightgray;
+}
+
