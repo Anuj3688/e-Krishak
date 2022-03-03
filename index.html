@@ -28,7 +28,7 @@
             Crop
         </div>
         <div class="navbarelement" id="navele5" onmouseover="removeplant() , removecrop()">
-            Weather
+           <a href="#weatherdetails" style="text-decoration: none;">Weather</a>
         </div>
         <div class="navbarelement" id="navele6">
             <!-- <div class="boxset">
@@ -110,26 +110,34 @@
     </div>
 
     <div id="weatherdetails">
-        <h1>Weather</h1>
-        <div id="currentforecast">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Weather</h1>
+        <br>
+        <div id="currentforecast" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             <div class="c-fore" id="c-fore-item1">Temperature</div>
             <div class="c-fore" id="c-fore-item2">Wind Speed</div>
             <div class="c-fore" id="c-fore-item3">Wind Direction</div>
         </div>
         <div id="futurepodcast" >
-            <div class="futurepod" id="futurepodcast1">Sunny <br> 28</div>
-            <div id="futurepodcast2" class="futurepod">Sunny <br> 34</div>
-            <div id="futurepodcast3" class="futurepod">Cloudy <br> 28</div>
-            <div id="futurepodcast4" class="futurepod"> Rainy <br> 24 </div>
-            <div id="futurepodcast5" class="futurepod">Sunny <br> 18</div>
-            <div id="futurepodcast6" class="futurepod"> Sunny <br> 30</div>
-            <div id="futurepodcast7" class="futurepod">Cloudy <br> 18</div>
-            <div id="futurepodcast8" class="futurepod">Sunny <br> 18</div>
-            <div id="futurepodcast9" class="futurepod"> Rain <br> 14</div>
-            <div id="futurepodcast10" class="futurepod"> Rain <br> 12</div>
+            <div class="futurepod" id="futurepodcast1" onclick="acdis(0)">Sunny <br> 28</div>
+            <div id="futurepodcast2" class="futurepod" onclick="acdis(1)">Sunny <br> 34</div>
+            <div id="futurepodcast3" class="futurepod" onclick="acdis(2)">Cloudy <br> 28</div>
+            <div id="futurepodcast4" class="futurepod" onclick="acdis(3)"> Rainy <br> 24 </div>
+            <div id="futurepodcast5" class="futurepod" onclick="acdis(4)">Sunny <br> 18</div>
+            <div id="futurepodcast6" class="futurepod" onclick="acdis(5)"> Sunny <br> 30</div>
+            <div id="futurepodcast7" class="futurepod" onclick="acdis(6)">Cloudy <br> 18</div>
+            <div id="futurepodcast8" class="futurepod" onclick="acdis(7)">Sunny <br> 18</div>
+            <div id="futurepodcast9" class="futurepod" onclick="acdis(8)"> Rain <br> 14</div>
+            <div id="futurepodcast10" class="futurepod" onclick="acdis(9)"> Rain <br> 12</div>
         </div>
     </div>
-
+    <div class="animation-Content" id="ac1">
+        <div id="anibox1">
+            <!-- Name -->
+        </div>
+        <div id="anibox2">
+            <!-- Degree  -->
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 

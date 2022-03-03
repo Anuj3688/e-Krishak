@@ -47,3 +47,8 @@ function removeplant(){
     document.getElementById("navhead").style = "background-color: #FBF8CC";
     document.getElementById("plantdetails").style = "display:none";
 }
+
+var arraytf  = [false,false,false,false,false,false,false,false,false,false];
+function acdis(a) {
+    // Where a is number of selector to be used b is true or false based on state
+}

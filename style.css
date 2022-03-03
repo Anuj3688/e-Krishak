@@ -211,17 +211,23 @@ input{
 /* weather details */
 
 #weatherdetails{
+    color: #CA6702;
     width: 1150px;
-    margin: 10px auto;
-    height: 380px;
+    margin: 0px auto;
+    height: 400px;
+    border-radius: 10px;
+background: #FBF8CC;
+box-shadow:  -20px -20px 60px #d5d3ad,
+             20px 20px 60px #ffffeb;
     background-size: 1200px 400px;
     background-repeat: no-repeat;
-    background-image: url(./image/cloudy.jpg);
-    border: 1px solid gray;
+ 
+    /* background-image: url(./image/cloudy.jpg); */
+    /* border: 1px solid gray; */
     padding: 10px;
-    border-radius: 20px;
 }
 #currentforecast{
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -238,7 +244,7 @@ h1{
     font-size: 30px;
     font-weight: 900;
     
-    background-color: rgb(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255, 0.541);
     padding: 20px;
     border: 1px solid white;
 }
@@ -254,11 +260,11 @@ h1{
     width: 100px;
     font-size: 20px;
     font-weight: 900;
-    background-color: rgb(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255, 0.548);
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    height: 140px;
+    height: 100px;
     border: 1px solid lightgray;
 }
 
